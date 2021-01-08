@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- hosted jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- hosted anime.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+
+  <!-- custom script files -->
+  <script
+    src="./index.js"
+  ></script>
+  <script 
+  src="./credentials.js"
+  ></script>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Exam Site</title>
+</head>
+<body>
+  <div class="corner"></div>
+
+  <!-- obliteration -->
+  <img id="doom" src="" alt="">
+  
+  <div
+    class="intro"
+  >
+    <div class="login-block">
+      <button id="login-btn">Log In</button>
+    </div>
+
+    <!-- login -->
+    <div class="creds-block">
+      <h1>You are trying to access article: pz20014</h1>
+      <h2>Level of access: Os_6</h2>
+      <h2>Provide valid credentials:</h2>
+      <label for="usr_login">login:</label><br>
+      <input id="usr_login" name="usr_login" type="text"><br>
+      <label for="usr_pass">password:</label><br>
+      <input id="usr_pass" name="usr_pass" type="password"><br>
+
+      <button class="expand">Log In</button>
+
+      <br><br><h4><span style="color: red;">WARNING:</span> In case of wrong credentials anything in 3km radius will be obliterated.</h4>
+    </div>
+  </div>
+
+  <div
+    id="control"
+  >
+    <div>
+      <h1>_obj: pz20014</h1>
+      <h2>_group: 6b</h2>
+      <span><strong>Description: </strong></span><p>This is my Exam Project page.</p>
+      <span id="dash">_</span>
+      <div>
+        <button id="expand-btn">Expand</button>
+      </div>
+    </div>
+    <article
+      style="display: none;"
+    >
+      <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <i>Eos vero eveniet ab soluta dolore perspiciatis expedita</i>, architecto mollitia deleniti aspernatur suscipit numquam accusamus placeat rem voluptate esse culpa labore? <strong>Facilis!</strong></p>
+      </div>
+      <div
+        style="margin: 0; border: none;"
+      >
+        <div class="quote"></div>
+        <span><del><small>Конфуций</small></del></span>
+      </div>
+      <div>
+        <p id="narrator">Can you, please, <mark>add</mark> tasks to this TODO:</p>
+        <input id="input-task" type="text">
+        <button id="add-task">+</button>
+        <ol id="todo">
+          ...
+        </ol>
+      </div>
+
+      <div id="img-container">
+        <img src="" alt="">
+        <label for="file-input">Upload Your avatar/image here</label>
+        <input id="file-input" name="file-input" type="file">
+        <div id="color-info-container">
+          <p></p>
+          <ul></ul>
+        </div>
+      </div>
+      
+      <div>
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+          <div>
+            <label for="firstname">_firstname:</label>
+            <input id="firstname" name="firstname" type="text"><br>
+            <span id="fname-error"></span>
+          </div>
+
+          <div>
+            <label for="lastname">_lastname:</label>
+            <input id="lastname" name="lastname" type="text"><br>
+            <span id="lname-error"></span>
+          </div>
+
+          <div>
+            <label for="email">_e-mail:</label>
+            <input id="email" name="email" type="text"><br>
+            <span id="email-error"></span>
+          </div>
+        </form>
+        <button id="submit">Submit</button>
+      </div>
+    </article>
+  </div>
+  <div class="corner"></div>
+</body>
+</html>
