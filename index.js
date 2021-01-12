@@ -89,7 +89,12 @@ window.addEventListener("load", () => {
     let mainArticle = document.querySelector("#control article");
     let expandArticleBtn = document.querySelector("#control > div button");
     expandArticleBtn.addEventListener("click", () => {
+      expandArticleBtn.style.display = "none";
       mainArticle.style.display = "block";
+
+      // img clearing to satisfy html validation
+      if (document.querySelector("#img-container img").getAttribute("src") == "src")
+        document.querySelector("#img-container img").style.display = "none";
     });
 
     let todoApp = document.getElementById("todo");
@@ -160,6 +165,9 @@ window.addEventListener("load", () => {
       if (fileUpload.files && fileUpload.files[0])
       {
         let img = document.querySelector("#img-container img");
+        img.style.display = "inline";
+        img.style.maxWidth = "100%";
+        img.style.maxHeight = "100%";
         img.src = URL.createObjectURL(fileUpload.files[0]);
         img.onload = () => {
           document.getElementById("color-info-container").style.display = "block";

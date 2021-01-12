@@ -31,7 +31,7 @@
   <div class="corner"></div>
 
   <!-- obliteration -->
-  <img id="doom" src="" alt="">
+  <img src="src" alt="explosion" id="doom">
   
   <div
     class="intro"
@@ -65,14 +65,15 @@
       <span><strong>Description: </strong></span><p>This is my Exam Project page.</p>
       <span id="dash">_</span>
       <div>
-        <button id="expand-btn">Expand</button>
+        <button id="expand-btn">Show Me</button>
       </div>
     </div>
     <article
       style="display: none;"
     >
+      <h2>_Article_header()_</h2>
       <div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <i>Eos vero eveniet ab soluta dolore perspiciatis expedita</i>, architecto mollitia deleniti aspernatur suscipit numquam accusamus placeat rem voluptate esse culpa labore? <strong>Facilis!</strong></p>
+        <p><abbr title="Generated Text">Lorem ipsum</abbr> <sup>dolor</sup>, sit amet consectetur adipisicing elit. <i>Eos vero eveniet ab soluta dolore perspiciatis expedita</i>, <em>architecto mollitia deleniti</em> aspernatur <small>suscipit</small> numquam accusamus placeat rem voluptate esse culpa labore? <strong>Facilis!</strong></p>
       </div>
       <div
         style="margin: 0; border: none;"
@@ -85,12 +86,12 @@
         <input id="input-task" type="text">
         <button id="add-task">+</button>
         <ol id="todo">
-          ...
+          <li id="starter-li">...</li>
         </ol>
       </div>
 
       <div id="img-container">
-        <img src="" alt="">
+        <img src="src" alt="uploaded image">
         <label for="file-input">Upload Your avatar/image here</label>
         <input id="file-input" name="file-input" type="file">
         <div id="color-info-container">
@@ -100,23 +101,23 @@
       </div>
       
       <div>
-        <form action="https://www.w3schools.com/action_page.php" method="post">
+        <form action="https://www.w3schools.com/action_page.php" target="_blank" method="post">
           <div>
             <label for="firstname">_firstname:</label>
             <input id="firstname" name="firstname" type="text"><br>
-            <span id="fname-error"></span>
+            <span class="error" id="fname-error"></span>
           </div>
 
           <div>
             <label for="lastname">_lastname:</label>
             <input id="lastname" name="lastname" type="text"><br>
-            <span id="lname-error"></span>
+            <span class="error" id="lname-error"></span>
           </div>
 
           <div>
             <label for="email">_e-mail:</label>
             <input id="email" name="email" type="text"><br>
-            <span id="email-error"></span>
+            <span class="error" id="email-error"></span>
           </div>
         </form>
         <button id="submit">Submit</button>

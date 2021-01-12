@@ -1,10 +1,13 @@
 * {
-  font-family: Lucida Console;
+  font-family: "Lucida Console";
   background-color: black;
   color: #149414;
 }
 a {
   text-decoration: none;
+}
+article {
+  margin-top: 50px;
 }
 article div {
   border: 2px dashed;
@@ -14,16 +17,19 @@ article div {
 article > div p {
   text-align: justify;
 }
-article div:first-child,
+article div:nth-child(2),
 article div:last-child {
   margin-bottom: 0;
 }
-article div:last-child {
+article > div:last-child {
   text-align: center;
 }
 article div:last-child div {
   margin: 0 auto;
   border: none;
+}
+article h2 {
+  text-align: center;
 }
 body {
   padding: 0;
@@ -78,6 +84,9 @@ form div {
 #narrator {
   display: block;
 }
+#starter-li {
+  list-style-type: none;
+}
 
 .color-square {
   height: 15px;
@@ -126,9 +135,6 @@ form div {
 .img-container {
   display: inline-block;
 }
-.img-container img {
-  display: inline;
-}
 .login-block {
   position: absolute;
   left: 50%;
@@ -155,10 +161,17 @@ form div {
   border-bottom: 1px #149414 solid;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1300px) {
   article > div:nth-last-child(2),
   article > div:nth-last-child(3) {
-    display: table-cell;
+    display: inline-block;
+    width: 45%;
+  }
+  article > div:last-child {
+    width: 45%;
+  }
+  article > div:nth-last-child(2) {
+    float: right;
   }
 }
 
@@ -169,5 +182,11 @@ form div {
   }
   form div {
     display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  article h2 {
+    font-size: 16px;
   }
 }
